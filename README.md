@@ -112,7 +112,7 @@ scrcpy --help
 
 #### Reduce size
 
-Sometimes, it is useful to mirror an Android device at a lower definition to
+It is useful to mirror an Android device at a lower definition to
 increase performance.
 
 To limit both the width and height to some value (e.g. 1024):
@@ -218,7 +218,7 @@ You can start several instances of _scrcpy_ for several devices.
 
 #### SSH tunnel
 
-To connect to a remote device, it is possible to connect a local `adb` client to
+To connect to a remote device, connect a local `adb` client to
 a remote `adb` server (provided they use the same version of the _adb_
 protocol):
 
@@ -234,7 +234,7 @@ From another terminal:
 scrcpy
 ```
 
-Like for wireless connections, it may be useful to reduce quality:
+It is useful to reduce quality for wireless connections:
 
 ```
 scrcpy -b2M -m800 --max-fps 15
@@ -290,7 +290,7 @@ Fullscreen can then be toggled dynamically with `Ctrl`+`f`.
 
 #### Read-only
 
-To disable controls (everything which can interact with the device: input keys,
+To disable controls (device interaction: input keys,
 mouse events, drag&drop files):
 
 ```bash
@@ -300,8 +300,7 @@ scrcpy -n
 
 #### Turn screen off
 
-It is possible to turn the device screen off while mirroring on start with a
-command-line option:
+A command-line option turns the mirroring on start device screen off:
 
 ```bash
 scrcpy --turn-screen-off
@@ -345,8 +344,7 @@ Note that it only shows _physical_ touches (with the finger on the device).
 
 #### Copy-paste
 
-It is possible to synchronize clipboards between the computer and the device, in
-both directions:
+Clipboards can be synchronized in both directions between the computer and the device:
 
  - `Ctrl`+`c` copies the device clipboard to the computer clipboard;
  - `Ctrl`+`Shift`+`v` copies the computer clipboard to the device clipboard;
